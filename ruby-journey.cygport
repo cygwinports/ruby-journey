@@ -1,0 +1,8 @@
+inherit rubygem
+
+NAME="ruby-journey"
+VERSION=1.0.4
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby journey extension"
+DESCRIPTION="Journey is a request router for Ruby."
