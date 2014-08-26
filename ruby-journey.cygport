@@ -2,7 +2,16 @@ inherit rubygem
 
 NAME="ruby-journey"
 VERSION=1.0.4
-RELEASE=1
+RELEASE=2
 CATEGORY="Ruby"
 SUMMARY="Ruby journey extension"
 DESCRIPTION="Journey is a request router for Ruby."
+
+PATCH_URI="1.0.4-rubygems24.patch"
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_journey_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_journey_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
+
